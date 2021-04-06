@@ -1,0 +1,29 @@
+@charset "ISO-8859-1";
+.footer {
+    position: fixed;
+    
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-color: rgba(252, 245, 250, 0.9); 			
+    color: voilet;
+}
+.header{
+    position: fixed;
+    top: 0;
+    height: 14%; 
+    width: 100%;
+    background-color: rgba(252, 245, 250, 0.9);
+    color: voilet;
+}
+.logout{
+	color: black;
+	text-align: right;
+}
+
+.align{
+	 margin: 30%;
+	 text-align: center;
+	 background-color: rgba(252, 245, 250, 0.9);
+	 padding: 5%;
+}
