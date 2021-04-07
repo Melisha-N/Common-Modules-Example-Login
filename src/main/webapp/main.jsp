@@ -10,10 +10,10 @@
 <title>Insert title here</title>
 <script type="text/javascript"  src="js/main.js"></script>
 </head>
-<body background="wallp.png" style="background-attachment: fixed;">
+<body background="darkp.jpg" style="background-attachment: fixed;">
 	<div class="header">
-		<p style="text-align: center; margin-top: 2%;"><b>Mel-App</b> 
-		<input style="font-size: 100%; background-position: right; margin-bottom: 5%; margin-top: 0%; color: black;" type="submit" value="Log Out">
+		<p style="text-align: center; margin-top:1% ; font-size: 26px;"><b>Mel-App</b> 
+		<input style="font-size: 55%; background-position: right; margin-bottom: 6%; margin-top: 0%; margin-left:92%; color: black;" type="submit" value="Log Out">
 		</p>
 	</div>
 	<form action="add.mel" name="validation" onsubmit="return validateUserName()">
@@ -49,9 +49,9 @@
 
 
 	<div class="footer">
-		<h2 style="text-align: center;">
+		<h3 style="text-align: center;">
 			<b>Since 90's</b>
-		</h2>
+		</h3>
 
 	</div>
 </body>
