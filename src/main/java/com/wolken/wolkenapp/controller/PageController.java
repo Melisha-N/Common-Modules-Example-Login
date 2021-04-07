@@ -28,6 +28,7 @@ public class PageController {
 		String saveMsg = pageService.validateAndSave(pageDTO);
 		req.setAttribute("savemsg", saveMsg);
 		logger.info("End of save method of  Page Controller");
-		return "final.jsp";
+		//return "final.jsp";
+		return "login.jsp";
 	}
 }

@@ -3,72 +3,56 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <link rel="stylesheet" href="page.css">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<script type="text/javascript"  src="js/main.js"></script>
 </head>
 <body background="wallp.png" style="background-attachment: fixed;">
 	<div class="header">
-		<h1 style="text-align: center; margin-top:2%;"><b>Mel-App</b></h1>
- 		<div class="logout">
- 			<input style="font-size: 100%;background-position:right; margin-bottom:5%; margin-top:0%; color: black;" type="submit" value="Log Out">
-		 </div> 
+		<p style="text-align: center; margin-top: 2%;"><b>Mel-App</b> 
+		<input style="font-size: 100%; background-position: right; margin-bottom: 5%; margin-top: 0%; color: black;" type="submit" value="Log Out">
+		</p>
 	</div>
-	
-	<script type="text/javascript">
-	function validateUserName(){
-		var usrname = document.validation.userName.value;
-		var status = false;
-		if(usrname == "" || usrname == null){
-			document.getElementById("user").innerHTML = "Please enter valid User Name";
-			status = false;
-		}
-		else{
-			document.getElementById("user").innerHTML ="Valid User Name";
-			status = true;
-		}
-		return status;
-	}
-</script>
-	
-	<div>
-		<form name="validation" action="add.mel" onsubmit="return validateUserName"> 
-		
-			<div class="align" style="background-attachment:fixed;">
-			
-				<br> User Name:<input type="text" name="userName"/><span id ="user" style="color:red"></span><br>
-				
-				<br> Email Id:<input type="email" name="emailId"><br>
-				
-				<br> Contact No:<input type="number" name="contactNo"><br>
-				
-				<br> DOB:<input type="date" name="dob"><br> <br>
-				
-				Gender:<br> <input type="radio" name="gender" value="male">
-				<label for="male">Male</label><br>
-				 <input type="radio" name="gender" value="female"> 
-				 <label for="female">Female</label><br>
-				<input type="radio" name="gender" value="other"> 
-				<label for="other">Other</label><br> 
-				
-				Password:<input type="password" name="password"><br> <br>
-				
-				Confirm Password:<input type="password" name="confirmPassword"><br>
-				
-				<br> <input type="reset" value="CANCEL"><br><br>
-				
-				<input type="submit" value="SAVE">
+	<form action="add.mel" name="validation" onsubmit="return validateUserName()">
 
-			</div>
-	</div>
-	</div>
+		<div class="align" style="background-attachment: fixed;">
+
+			<br> User Name:<input type="text" name="userName"><br><span id="userNamelocation"></span>
+			
+			 <br> Email Id:<input type="email" name="emailId"><br><span id="emaillocation"></span>
+			 
+			  <br>Contact No:<input type="number" name="contactNo"><br><span id="contactNolocation"></span> 
+			  
+			  <br> DOB:<input type="date" name="dob"><br><span id="doblocation"></span>  
+			  
+			  <br> Gender:<br>
+			  <input type="radio" name="gender" value="male">
+			  <label for="male">Male</label><br> 
+			  <input type="radio" name="gender"value="female">
+			  <label for="female">Female</label><br>
+			  <input type="radio" name="gender" value="other">
+			  <label for="other">Other</label>
+			  <span id="genderlocation"></span>
+			  
+			  <br>Password:<input type="password" name="password"><br><span id="passwordlocation"></span>
+			  
+			  <br> Confirm Password:<input type="password" name="confirmPassword"><br><span id="confirmPasswordlocation"></span>
+			   
+			  <br> <input type="reset" value="CANCEL"><br>
+			  
+			  <br> <input type="submit" value="SAVE"><br>
+		</div>
 	</form>
-	</div>
+
+
 	<div class="footer">
-		<h2 style="text-align:center;"><b>Since 90's</b></h2>
-		
+		<h2 style="text-align: center;">
+			<b>Since 90's</b>
+		</h2>
+
 	</div>
 </body>
 </html>
