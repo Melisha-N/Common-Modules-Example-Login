@@ -49,7 +49,7 @@ public class PageDAOImpl implements PageDAO{
 		Session session = factory.openSession();
 		Transaction transaction = session.beginTransaction();
 		
-		Query getQ = session.createQuery("from  PageEntity pg where pg.userName=: userName");
+		Query getQ = session.createQuery("from  PageEntity pe where pe.userName=: userName");
 		getQ.setParameter("userName", userName);
 		PageEntity pageEntity = (PageEntity) getQ.uniqueResult();
 		

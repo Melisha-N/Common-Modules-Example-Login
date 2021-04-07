@@ -12,6 +12,7 @@
 	<property name="annotatedClasses">
 	<list>
 		<value>com.wolken.wolkenapp.entity.PageEntity</value>
+		<value>com.wolken.wolkenapp.entity.LoginEntity</value>
 	</list>
 	</property>
 	</bean>

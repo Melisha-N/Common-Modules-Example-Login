@@ -18,10 +18,12 @@
     color: white; font-size: 225%;">Welcome to Login Page</p>
 </div>
 <div class=align>
+<form action="login.mel">
  <br>User Name:<input type="text" name="userName"><br>
  <br>Password:<input type="password" name="password"><br>
  <br><input type="reset" value="CANCEL"><br>
  <br><input type="submit" value="LOGIN"><br>
+ </form>
 </div>
 </body>
 </html>

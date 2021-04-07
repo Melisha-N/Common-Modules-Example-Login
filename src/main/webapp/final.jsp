@@ -9,5 +9,6 @@
 </head>
 <body>
 <h1>${savemsg}</h1>
+<h1>${loginMsg}</h1>
 </body>
 </html>
