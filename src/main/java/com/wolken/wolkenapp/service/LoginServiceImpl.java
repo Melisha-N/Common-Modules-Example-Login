@@ -20,24 +20,24 @@ public class LoginServiceImpl implements LoginService{
 	public String validateAndLogin(LoginDTO loginDTO) {
 		
 		try {
-			LoginEntity	loginEntity = new LoginEntity();
+			LoginEntity	loginEntity ;
 			
 			logger.info("Calling loginDAO.getByUserName()");
 			loginEntity = loginDAO.getByUserName(loginDTO.getUserName());
 			
 			logger.info("loginEntity="+loginEntity);
 			
-			logger.info("loginDTO.getUserName()="+loginDTO.getUserName());
-			logger.info("loginEntity.getUserName()="+loginEntity.getUserName());
-
+			
 			logger.info("loginDTO.getPassword()="+loginDTO.getPassword());
 			logger.info("loginEntity.getPassword()="+loginEntity.getPassword());
 			
 			
 			if(loginEntity !=null) {
-				
+				logger.info("loginDTO.getUserName()="+loginDTO.getUserName());
+				logger.info("loginEntity.getUserName()="+loginEntity.getUserName());
+
 				if(loginDTO.getUserName().equals(loginEntity.getUserName())) {
-					
+					//username found/match
 					if(loginDTO.getPassword().equals(loginEntity.getPassword())) {
 						
 						logger.info("Succesfully Logged In");
@@ -46,7 +46,7 @@ public class LoginServiceImpl implements LoginService{
 					}
 					else {
 						logger.info("Password doesnt match with existing one");
-						return "Password doesnt match with existing one";
+						return "username and Password doesnt match with existing one";
 					}
 					
 				}
@@ -55,6 +55,9 @@ public class LoginServiceImpl implements LoginService{
 					return "Username doesnt match with existing one";
 				}
 			}
+//			else {
+//				logger.info("");
+//			}
 			
 		} catch (Exception e) {
 			logger.info("Inside Catch Block of LoginServiceImpl");

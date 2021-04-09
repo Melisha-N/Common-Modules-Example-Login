@@ -6,7 +6,7 @@
     height: 10%;
     width: 100%;
     background-color: rgba(252, 250, 250, 0.5); 			
-    color: voilet;
+    color: white;
 }
 .header{
     position: fixed;
@@ -28,5 +28,11 @@
 	 padding: 5%;
 }
 
+.alignn{
+	 margin: 40%;
+	 text-align: center;
+	 background-color: rgba(252, 250, 250, 0.5);
+	 padding: 5%;
+}
 
 

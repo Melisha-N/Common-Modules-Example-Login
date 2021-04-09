@@ -31,7 +31,7 @@ public class PageServiceImpl implements PageService {
 					throw new UserNameException();
 				}
 				if(pageDTO.getContactNo().length() < 1 || pageDTO.getContactNo().length() >11) {
-					logger.info("UserNameException-executing");
+					logger.info("ContactException-executing");
 					throw new ContactException();
 				}
 				else {
