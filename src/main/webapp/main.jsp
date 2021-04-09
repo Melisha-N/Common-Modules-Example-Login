@@ -12,9 +12,9 @@
 </head>
 <body background="darkp.jpg" style="background-attachment: fixed;">
 	<div class="header">
-		<p style="text-align: center; margin-top:1% ; font-size: 26px;"><b>Mel-App</b> 
-		<input style="font-size: 55%; background-position: right; margin-bottom: 6%; margin-top: 0%; margin-left:92%; color: black;" type="submit" value="Log Out">
-		</p>
+		<label><b>Mel-App</b></label> 
+		<input  class="logout" type="submit" value="Log In">
+		
 	</div>
 	<form action="add.mel" name="validation" onsubmit="return validateUserName()">
 
@@ -56,3 +56,6 @@
 	</div>
 </body>
 </html>
+
+<!-- style="text-align: center; margin-top:1% ; font-size: 26px;"> -->
+ <!-- style="font-size: 55%; background-position: right; margin-bottom: 6%; margin-top: 0%; margin-left:92%; color: black;"  --> 

@@ -13,6 +13,7 @@
 	<list>
 		<value>com.wolken.wolkenapp.entity.PageEntity</value>
 		<value>com.wolken.wolkenapp.entity.LoginEntity</value>
+		<value>com.wolken.wolkenapp.entity.GroceryEntity</value>
 	</list>
 	</property>
 	</bean>

@@ -1,4 +1,3 @@
-@charset "ISO-8859-1";
 .footer {
     position: fixed;
     
@@ -7,6 +6,15 @@
     width: 100%;
     background-color: rgba(252, 250, 250, 0.5); 			
     color: white;
+}
+.footer1 {
+    position: fixed;
+    
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+    background-color: rgba(252, 250, 250, 0.5); 			
+    color: voilet;
 }
 .header{
     position: fixed;
@@ -17,8 +25,10 @@
     color: voilet;
 }
 .logout{
-	color: black;
+    color: blue;
+    margin-left:80%;
 	text-align: right;
+	font-size: 25px;
 }
 
 .align{
@@ -35,4 +45,21 @@
 	 padding: 5%;
 }
 
+.header1{
+	text-align: center; 
+	position: fixed;
+    top: 0;
+    height: 17%; 
+    width: 100%;
+    background-color: rgba(252, 250, 250, 0.5);
+    color: white; 
+    font-size: 200%; 
+    margin-top: 0%;
+}
+.align1{
+	 margin: 35%;
+	 text-align: center;
+	 background-color: rgba(252, 250, 250, 0.5);
+	 padding: 5%;
+}
 

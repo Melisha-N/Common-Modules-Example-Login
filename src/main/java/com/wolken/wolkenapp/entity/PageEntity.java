@@ -22,8 +22,8 @@ import lombok.Setter;
 public class PageEntity {
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO , generator = "mel")
-	@GenericGenerator(name="mel",strategy="native")
+	@GeneratedValue(strategy = GenerationType.AUTO , generator = "native")
+	@GenericGenerator(name="native",strategy="native")
 	@Column(name="page_id")
 	private int PageId;
 	
